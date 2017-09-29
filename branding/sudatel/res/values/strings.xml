@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SudaniPhone</string>
+    <string name="service_name">SudaniPhone</string>
+    <string name="addressbook_label">SudaniPhone</string>
+    <string name="notification_title">SudaniPhone</string>
+    <string name="about_version">Based on Linphone Android %s</string>
+    <string name="license_info">License Information</string>
+    <string name="vendor_link">www.accuris-networks.com</string>
+    <string name="vendor_info">Provided to Sudani by Accuris Networks</string>
+
+    <!-- Launch screen -->
+    <string name="app_description"></string>
+
+    <!-- Assistant -->
+    <string name="assistant_login_desc">Please enter your phone number and password</string>
+
+    <!-- Dailer -->
+    <string name="address_bar_hint">Enter a number</string>
+</resources>

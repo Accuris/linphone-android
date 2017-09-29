@@ -192,11 +192,15 @@ public class SettingsFragment extends PreferencesListFragment {
 			findPreference(getString(R.string.pref_image_sharing_server_key)).setLayoutResource(R.layout.hidden);
 		}
 
+		if (getResources().getBoolean(R.bool.hide_chat_settings)) {
+			emptyAndHidePreference(R.string.pref_video_key);
+		}
+
 		if (!getResources().getBoolean(R.bool.enable_push_id)) {
 			hidePreference(R.string.pref_push_notification_key);
 		}
 
-		if (!Version.isVideoCapable() || !LinphoneManager.getLcIfManagerNotDestroyedOrNull().isVideoSupported()) {
+		if (!Version.isVideoCapable() || !LinphoneManager.getLcIfManagerNotDestroyedOrNull().isVideoSupported() || !getResources().getBoolean(R.bool.enable_video_for_app)) {
 			emptyAndHidePreference(R.string.pref_video_key);
 		} else {
 			if (!AndroidCameraConfiguration.hasFrontCamera()) {

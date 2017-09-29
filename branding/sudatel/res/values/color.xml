@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorA">#0075ca</color>
+    <color name="colorJ">#004a80</color>
+    <color name="notification_color_led">#0075ca</color>
+</resources>

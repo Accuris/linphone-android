@@ -64,6 +64,7 @@
 	<bool name="automatically_start_intercepted_outgoing_gsm_call">true</bool><!-- This settings handle the behavior of the view waiting for the remote provisioning configuration to be done -->
 	<bool name="hide_camera_settings">false</bool>
 	<bool name="hide_in_call_stats">false</bool>
+	<bool name="enable_video_for_app">true</bool> <!-- Allow to disable video, even if underling libraries and hardware support it -->
 
 	<!-- Settings -->
 	<bool name="disable_every_log">false</bool>
@@ -72,6 +73,7 @@
 	<bool name="use_friendlist_subscription">true</bool>
 	<string name="default_stun">stun.linphone.org</string>
 	<bool name="hide_accounts">false</bool>
+	<bool name="hide_chat_settings">false</bool>
 
 	<!-- Chat -->
 	<bool name="disable_chat">false</bool>

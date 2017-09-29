@@ -114,6 +114,12 @@ android {
       signingConfig signingConfigs.release
     }
   }
+  productFlavors {
+    linphonedefault {
+    }
+    sudatel {
+    }
+  }
   sourceSets {
     main {
       manifest.srcFile 'AndroidManifest.xml'
@@ -132,6 +138,9 @@ android {
       packagingOptions {
         excludes = excludePackage
       }
+    }
+    sudatel {
+      res.srcDirs += ['branding/sudatel/res']
     }
 
     debug.setRoot('build-types/debug')
