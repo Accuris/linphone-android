@@ -533,7 +533,7 @@ private static AssistantActivity instance;
 			builder.setPrefix(prefix);
 		}
 
-		String forcedProxy = "";
+		String forcedProxy = getResources().getString(R.string.forced_proxy);;
 		if (!TextUtils.isEmpty(forcedProxy)) {
 			builder.setProxy(forcedProxy)
 					.setOutboundProxyEnabled(true)

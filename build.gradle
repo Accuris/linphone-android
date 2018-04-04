@@ -118,6 +118,8 @@ android {
     linphonedefault {
     }
     sudatel {
+      versionCode 1
+      versionName "0.1"
     }
   }
   sourceSets {
@@ -189,6 +191,7 @@ android.applicationVariants.all { variant ->
       "${adb} shell pm grant ${applicationId} android.permission.WRITE_CONTACTS".execute()
     }
   })
+  variant.resValue "string", "versionName", variant.versionName
 }
 
 task runApplication {

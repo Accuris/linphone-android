@@ -38,6 +38,7 @@
 	<bool name="hide_generic_accounts_in_assistant">false</bool>
 	<bool name="hide_remote_provisioning_in_assistant">false</bool>
 	<bool name="display_account_assistant_at_first_start">true</bool>
+	<string name="forced_proxy"></string>
 
 	<!-- Remote provisioning -->
 	<bool name="display_sms_remote_provisioning_activity">false</bool>
